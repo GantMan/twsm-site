@@ -23,23 +23,11 @@ const styles = StyleSheet.create({
     color: "#fff"
   },
   app: {
-    flex: 1, 
+    flex: 1,
     backgroundColor: "#fff"
   }
 });
 
-const PhoneWindow = (props: any) => (
-  <View style={styles.window}>
-    <View style={styles.statusBar}>
-      <Text style={styles.statusBarItem}>9:30</Text>
-      <Text style={styles.statusBarItem}>{"4G   ###"}</Text>
-    </View>
-    <View style={styles.app}>
-      <App />
-    </View>
-  </View>
-);
-
 const rootTag = document.getElementById("root");
-AppRegistry.registerComponent("App", () => PhoneWindow);
+AppRegistry.registerComponent("App", () => App);
 AppRegistry.runApplication("App", { rootTag });
